@@ -71,14 +71,13 @@
                 <EditText
                     android:layout_width="350dp"
                     android:layout_height="60dp"
-                    android:id="@+id/login_password"
+                    android:id="@+id/place"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/lavender_border"
                     android:padding="8dp"
                     android:hint="Place"
                     android:drawablePadding="8dp"
                     android:textColor="@color/grey"/>
-
 
                 <Button
                     android:layout_width="350dp"
@@ -89,12 +88,7 @@
                     android:textSize="18sp"
                     android:onClick="Next"
                     app:cornerRadius = "30dp"/>
-
-
-
-
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

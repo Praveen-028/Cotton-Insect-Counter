@@ -68,6 +68,29 @@
                 android:id="@+id/ImageView"
                 android:layout_marginLeft="50dp"
                 android:src="@color/white" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/Submit"
+                    android:onClick="submitImage" />
+                <Button
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Count Insect"
+                    android:onClick="generateAndUpdateRandomCount"
+                    />
+            </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -89,6 +112,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:text="0"
+                    android:id="@+id/num"
                     android:textStyle="bold"
                     android:textSize="20dp"
                     android:layout_gravity="center" />
@@ -104,6 +128,13 @@
                     app:cornerRadius="30dp"
                     android:onClick="resetImage"/>
             </LinearLayout>
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:onClick="logout"/>
 
         </LinearLayout>
     </ScrollView>
