@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/pagebkg">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="350dp"
+                android:layout_height="114dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/lavender_border"
+                android:drawablePadding="8dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:hint="Farmer Name"
+                android:padding="8dp"
+                android:text="Insect Counting On Cotton Leaf"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Open Camera"
+                    android:id="@+id/open_camera"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="50dp"
+                    android:onClick="openCamera"
+                    app:cornerRadius="30dp" />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Upload File"
+                    android:id="@+id/upload_file"
+                    android:textSize="18sp"
+                    android:onClick="uploadFile"
+                    app:cornerRadius="30dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/ImageView"
+                android:layout_marginLeft="50dp"
+                android:src="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insects Counted : "
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_gravity="center" />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:text="Reset"
+                    android:id="@+id/Reset"
+                    android:textSize="18sp"
+                    app:cornerRadius="30dp"
+                    android:onClick="resetImage"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

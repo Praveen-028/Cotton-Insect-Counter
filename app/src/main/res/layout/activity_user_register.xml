@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagebkg"
+    android:id="@+id/main"
+    tools:context=".User_Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="100dp"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:drawablePadding="8dp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:hint="Farmer Name"
+                    android:text="Enter Details"
+                    android:textSize="30dp" />
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/name"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lavender_border"
+                    android:padding="8dp"
+                    android:hint="Farmer Name"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/grey"/>
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/Age"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/lavender_border"
+                    android:padding="8dp"
+                    android:inputType="number"
+                    android:hint="Age"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/grey"/>
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/login_mobile"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/lavender_border"
+                    android:padding="8dp"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/grey"/>
+
+                <EditText
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/login_password"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/lavender_border"
+                    android:padding="8dp"
+                    android:hint="Place"
+                    android:drawablePadding="8dp"
+                    android:textColor="@color/grey"/>
+
+
+                <Button
+                    android:layout_width="350dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Next"
+                    android:id="@+id/login_button"
+                    android:textSize="18sp"
+                    android:onClick="Next"
+                    app:cornerRadius = "30dp"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
